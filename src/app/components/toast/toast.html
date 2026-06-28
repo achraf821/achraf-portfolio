@@ -1,0 +1,6 @@
+<div class="toast-container">
+  <div *ngFor="let toast of toasts" class="toast" [class.visible]="toast.visible" [class.error]="toast.type === 'error'">
+    <span class="icon">{{ toast.type === 'success' ? '✓' : '✕' }}</span>
+    <span class="message">{{ toast.message }}</span>
+  </div>
+</div>

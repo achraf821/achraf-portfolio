@@ -1,30 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
 nav {
+  height: 55px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #303ce6;
+  padding: 1rem 8%;
+  background-color: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+
+  a {
+    text-decoration: none;  
+    color: inherit;         
+  
+    &:hover {
+      color: inherit;       
+    }
+  
+    &:visited {
+      color: inherit;       
+    }
+  }
 
   .logo {
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 400;
-    font-family: "Miranda Sans", sans-serif;  }
+    font-family: "Miranda Sans", sans-serif;
+  }
 
-  ul {
+  .list {
     display: flex;
     list-style: none;
-    gap: 4rem;
+    gap: 3rem;
 
     li a {
       color: #ffffff;
       text-decoration: none;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
       &:hover {
-        color: #00e5a0;
+        color: #38bdf8;
       }
     }
   }

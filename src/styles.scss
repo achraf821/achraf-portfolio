@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'aos/dist/aos.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a;
+  margin: 0;
+  padding: 0;
+  padding-top: 75px;
+}
+
+section {
+  scroll-margin-top: 60px;
+}

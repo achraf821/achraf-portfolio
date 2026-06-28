@@ -1,0 +1,129 @@
+section {
+  padding: 20px 100px;
+  color: #ffffff;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    span {
+      color: #38bdf8;
+    }
+  }
+
+  .aboutmeintro {
+    margin: auto;
+    max-width: 1000px;
+  
+    .aboutmeintro-text {
+      text-align: center;
+      font-size: 1.3em;
+    }
+  }
+
+  .about-container {
+    display: flex;
+    gap: 60px;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    .about-text {
+      flex: 1;
+
+      h3 {
+        font-size: 1.5rem;
+        color: #38bdf8;
+      }
+      p {
+        color: #ffffff;
+        font-size: 1.04rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+    }
+
+    .about-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      .info-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 6px;
+        background-color: #1e293b;
+        border: 1px solid rgba(56, 189, 248, 0.2);
+        border-radius: 10px;
+        padding: 16px 20px;
+        transition: border-color 0.2s;
+
+        &:hover {
+          border-color: rgba(56, 189, 248, 0.6);
+        }
+
+        .label {
+          font-size: 0.9rem;
+          color: #38bdf8;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          font-family: 'Fira Code', monospace;
+        }
+
+        .value {
+          font-size: 1.1rem;
+          color: #ffffff;
+          font-weight: 500;
+        }
+      }
+
+      .stats-grid {
+        display: flex;
+        gap: 12px;
+        margin-top: 16px;
+
+        .stat-card {
+          flex: 1;
+          background-color: #1e293b;
+          border: 1px solid rgba(56, 189, 248, 0.2);
+          border-radius: 12px;
+          padding: 16px;
+          text-align: center;
+          transition: border-color 0.2s, transform 0.2s;
+
+          &:hover {
+            border-color: rgba(56, 189, 248, 0.6);
+            transform: translateY(-4px);
+          }
+
+          .stat-icon {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+          }
+
+          .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #38bdf8;
+            margin-bottom: 4px;
+          }
+
+          .stat-label {
+            font-size: 0.9rem;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

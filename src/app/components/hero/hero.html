@@ -1,1 +1,12 @@
-<p>hero works!</p>
+<section id="hero">
+  <div class="hero-content">
+    <img [src]="photo" alt="Achraf Laazizi" data-aos="fade-down" data-aos-duration="800" data-aos-offset="0">
+    <h1 data-aos="fade-up" data-aos-delay="200" data-aos-offset="0"> Hello there, I'm <span>Achraf Laazizi</span></h1>
+    <p data-aos="fade-up" data-aos-delay="350" data-aos-offset="0">Software Engineer - INSA Toulouse graduate</p>
+    <p data-aos="fade-up" data-aos-delay="450" data-aos-offset="0">Passionate about Full-Stack Development</p>
+    <div class="buttons" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">
+      <button (click)="scrollTo('projects')">View my projects</button>
+      <button (click)="scrollTo('contact')">Contact me</button>
+    </div>
+  </div>
+</section>
